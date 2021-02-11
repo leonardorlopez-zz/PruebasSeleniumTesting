@@ -7,11 +7,12 @@ import org.openqa.selenium.support.PageFactory;
 
 public class Guru99HomePage {
 	WebDriver driver;
-
+    
 	@FindBy(xpath = "//table//tr[@class='heading3']")
 	WebElement homePageUserName;
 
 	public Guru99HomePage(WebDriver driver) {
+		System.out.println("Hola Mundo");
 		this.driver = driver;
 		// This initElements method will create all WebElements
 		PageFactory.initElements(driver, this);
